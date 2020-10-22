@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogHorasDias</class>
+ <widget class="QDialog" name="DialogHorasDias">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>922</width>
+    <height>678</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <activeon>:/icons/pix/oxygen/48x48/actions/view-calendar-week.png</activeon>
+   </iconset>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>881</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Dias y Horarios</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <activeon>:/icons/pix/oxygen/48x48/actions/view-calendar-week.png</activeon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>100</y>
+     <width>621</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="icon">
+     <iconset>
+      <activeon>:/icons/pix/oxygen/48x48/actions/view-calendar-month.png</activeon>
+     </iconset>
+    </attribute>
+    <attribute name="title">
+     <string>Carga de Dias/Horarios</string>
+    </attribute>
+    <widget class="QPushButton" name="agregar">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>400</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Agregar</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <activeon>:/icons/pix/oxygen/48x48/actions/games-endturn.png</activeon>
+      </iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="mensaje">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>430</y>
+       <width>341</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>60</y>
+       <width>321</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Horario (*)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBoxHora">
+          <item>
+           <property name="text">
+            <string>Seleccone Opción</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10:00</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11:00</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>12:00</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>13:00</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>14:00</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>15:00</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>16:00</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>17:00</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>18:00</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>19:00</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>20:00</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Dia (*)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBoxDia">
+          <item>
+           <property name="text">
+            <string>Seleccione Opción</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Lunes</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Martes</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Miercoles</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Jueves</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Viernes</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sabado</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Actividad (*)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBoxActividad">
+          <item>
+           <property name="text">
+            <string>Seleccione Opción</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Danzas</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Piano</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Guitarra</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Violin</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ukelele</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kendo</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Style (*)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBoxStyle"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Docente (*)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBoxDocente"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>98</x>
+       <y>360</y>
+       <width>401</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="buscar">
+        <property name="text">
+         <string>Buscar Actividad</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <activeon>:/icons/pix/oxygen/48x48/actions/edit-find-mail.png</activeon>
+         </iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="modificar">
+        <property name="text">
+         <string>Modificar</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <activeon>:/icons/pix/oxygen/48x48/actions/im-status-message-edit.png</activeon>
+         </iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="eliminar">
+        <property name="text">
+         <string>Eliminar</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <activeon>:/icons/pix/oxygen/48x48/actions/edit-table-delete-row.png</activeon>
+         </iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>10</y>
+       <width>451</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>Atención</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <activeon>:/icons/pix/oxygen/48x48/status/security-medium.png</activeon>
+         </iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>22</width>
+          <height>22</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_11">
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="text">
+         <string>Los campos con asteriscos (*) son obligatorios</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="icon">
+     <iconset>
+      <activeon>:/icons/pix/oxygen/48x48/actions/view-calendar-month.png</activeon>
+     </iconset>
+    </attribute>
+    <attribute name="title">
+     <string>Listado Dias Horarios</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableDiasHorario">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>90</y>
+       <width>541</width>
+       <height>351</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>Hora</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Dia</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Actividad</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Style</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Docente</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QLabel" name="mensajeTabla">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>450</y>
+       <width>411</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>10</y>
+       <width>272</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QComboBox" name="comboBoxDia_2">
+        <item>
+         <property name="text">
+          <string>Seleccione Opción</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lunes</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Martes</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Miercoles</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Jueves</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Viernes</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Sabado</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="filtrarDia">
+        <property name="text">
+         <string>Filtrar x Dia</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <activeon>:/icons/pix/oxygen/48x48/actions/view-calendar-workweek.png</activeon>
+         </iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>50</y>
+       <width>308</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QComboBox" name="comboBoxActividad_2">
+        <item>
+         <property name="text">
+          <string>Seleccione Opción</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Danzas</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Piano</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Guitarra</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Violin</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ukelele</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Kendo</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="filtrarActividad">
+        <property name="text">
+         <string>Filtrar x Actividad</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <activeon>:/icons/pix/oxygen/48x48/categories/applications-education.png</activeon>
+         </iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>130</y>
+     <width>191</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="icons.qrc">:/icons/pix/oxygen/breaktime.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>630</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Volver al Menu</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <activeon>:/icons/pix/oxygen/48x48/actions/go-first-view.png</activeon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>22</width>
+     <height>22</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_7"/>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_8"/>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

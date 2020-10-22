@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogInformes</class>
+ <widget class="QDialog" name="DialogInformes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>740</width>
+    <height>452</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <activeon>:/icons/pix/oxygen/48x48/actions/view-calendar-list.png</activeon>
+   </iconset>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>691</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Informes</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <activeon>:/icons/pix/oxygen/48x48/actions/view-calendar-list.png</activeon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>80</y>
+     <width>521</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="elideMode">
+    <enum>Qt::ElideNone</enum>
+   </property>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="icon">
+     <iconset>
+      <activeon>:/icons/pix/oxygen/48x48/status/meeting-participant.png</activeon>
+     </iconset>
+    </attribute>
+    <attribute name="title">
+     <string>Listado Docentes</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableDocentes">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>431</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>Nombre y Apellido</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>DNI</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Fecha Nac.</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Edad</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Dirección</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Localidad</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Telefono</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Movil</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>e-mail</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QLabel" name="mensajeDocentes">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>230</y>
+       <width>241</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="exportCSV">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>230</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <stylestrategy>PreferAntialias</stylestrategy>
+      </font>
+     </property>
+     <property name="text">
+      <string>Exportar a CSV</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <activeon>:/icons/pix/oxygen/48x48/actions/system-switch-user.png</activeon>
+      </iconset>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <attribute name="icon">
+     <iconset>
+      <activeon>:/icons/pix/oxygen/48x48/apps/preferences-contact-list.png</activeon>
+     </iconset>
+    </attribute>
+    <attribute name="title">
+     <string>Listado Inscriptos</string>
+    </attribute>
+    <widget class="QTableWidget" name="tablePersonas">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>441</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>Nombre y Apellido</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>DNI</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Fecha Nac.</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Edad</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Dirección</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Localidad</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Teléfono</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Movil</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>E-mail</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Observaciones</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Nombre Pariente</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Parentezco</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Tel. Contacto</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QLabel" name="mensajeInscriptos">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>230</y>
+       <width>251</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="exportCSV_3">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>230</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <stylestrategy>PreferAntialias</stylestrategy>
+      </font>
+     </property>
+     <property name="text">
+      <string>Exportar a CSV</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <activeon>:/icons/pix/oxygen/48x48/actions/system-switch-user.png</activeon>
+      </iconset>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="icon">
+     <iconset>
+      <activeon>:/icons/pix/oxygen/48x48/categories/applications-education.png</activeon>
+     </iconset>
+    </attribute>
+    <attribute name="title">
+     <string>Listado Clases</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableClases">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>441</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>Actividad</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Alumno</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Style</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Pack</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Día</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Mes</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Año</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Docente</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Monto Abonado</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Forma de Pago</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QLabel" name="mensaje">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>230</y>
+       <width>231</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="exportCSV_2">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>230</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <stylestrategy>PreferAntialias</stylestrategy>
+      </font>
+     </property>
+     <property name="text">
+      <string>Exportar a CSV</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <activeon>:/icons/pix/oxygen/48x48/actions/system-switch-user.png</activeon>
+      </iconset>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="icon">
+     <iconset>
+      <activeon>:/icons/pix/oxygen/48x48/categories/applications-graphics.png</activeon>
+     </iconset>
+    </attribute>
+    <attribute name="title">
+     <string>Listado Styles</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableStyles">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>20</y>
+       <width>131</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="textElideMode">
+      <enum>Qt::ElideMiddle</enum>
+     </property>
+     <column>
+      <property name="text">
+       <string>Styles</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+      </property>
+     </column>
+    </widget>
+    <widget class="QLabel" name="mensajeStyles">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>240</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="icon">
+     <iconset>
+      <activeon>:/icons/pix/oxygen/48x48/places/folder-tar.png</activeon>
+     </iconset>
+    </attribute>
+    <attribute name="title">
+     <string>Listado Packs</string>
+    </attribute>
+    <widget class="QTableWidget" name="tablePacks">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>20</y>
+       <width>111</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>Packs</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+      </property>
+     </column>
+    </widget>
+    <widget class="QLabel" name="mensajePacks">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>240</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_6">
+    <attribute name="icon">
+     <iconset>
+      <activeon>:/icons/pix/oxygen/48x48/actions/bookmark-new.png</activeon>
+     </iconset>
+    </attribute>
+    <attribute name="title">
+     <string>Tipo Actividad</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableTipoActividad">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>20</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="textElideMode">
+      <enum>Qt::ElideMiddle</enum>
+     </property>
+     <column>
+      <property name="text">
+       <string>Descripción</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+      </property>
+     </column>
+    </widget>
+    <widget class="QLabel" name="mensajeTipoActividad">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>220</y>
+       <width>241</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>151</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>:/icons/pix/oxygen/breaktime.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>400</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Volver al Menu</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <activeon>:/icons/pix/oxygen/48x48/actions/go-first-view.png</activeon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>22</width>
+     <height>22</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
